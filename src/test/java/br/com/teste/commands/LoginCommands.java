@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import utils.Config;
 import static org.junit.Assert.assertEquals;
 
 import java.time.Duration;
@@ -27,8 +27,8 @@ public class LoginCommands {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void acessarSistema(String url) {
-        driver.get(url);
+    public void acessarSistema() {
+        driver.get(Config.getBaseUrl());
     }
 
     public void preencherUsuario(String usuario) {

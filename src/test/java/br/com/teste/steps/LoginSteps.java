@@ -19,7 +19,7 @@ public class LoginSteps {
 
     @Dado("que o usuário acesse o sistema")
     public void queOUsuarioAcesseOSistema() {
-        login.acessarSistema("https://www.liriomatriz.com.br/sistema");
+        login.acessarSistema();
     }
 
     @Quando("ele informar o usuário {string} e a senha {string}")

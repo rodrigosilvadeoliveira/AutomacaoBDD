@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="br.com.teste.runners.TestRunner" time="83.852" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="br.com.teste.runners.TestRunner" time="54.14" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="25.0.1+8-LTS-27"/>
@@ -62,5 +62,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Login no sistema" name="Exibir mensagem de erro ao inserir credenciais inválidas" time="83.852"/>
+  <testcase classname="Login no sistema" name="Exibir mensagem de erro ao inserir credenciais inválidas" time="54.14"/>
 </testsuite>
