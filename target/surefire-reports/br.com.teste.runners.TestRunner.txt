@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.teste.runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.207 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.98 sec
