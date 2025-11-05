@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Config;
@@ -21,6 +22,7 @@ public class LoginCommands {
     private LoginPage page;
     private WebDriverWait wait;
 
+    
     public LoginCommands(WebDriver driver) {
         this.driver = driver;
         this.page = new LoginPage();
@@ -48,11 +50,11 @@ public class LoginCommands {
     }
     public boolean verificarUrlInicial() {
         wait.until(ExpectedConditions.elementToBeClickable(page.botaoFecharBanner)).click();
-        return driver.getCurrentUrl().equals("https://www.liriomatriz.com.br/paginainicial");
+        return driver.getCurrentUrl().contains("/paginainicial");
     }
 
     public boolean verificarUrlNegado() {
-        return driver.getCurrentUrl().equals("https://www.liriomatriz.com.br/acesso_negado.php");
+        return driver.getCurrentUrl().equals("/acesso_negado.php");
     }
 
     public void validarMensagem(String mensagemEsperada) {

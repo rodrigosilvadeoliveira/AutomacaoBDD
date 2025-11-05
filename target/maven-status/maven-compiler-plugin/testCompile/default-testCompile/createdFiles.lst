@@ -1,6 +1,0 @@
-br\com\teste\steps\LoginSteps.class
-br\com\teste\pages\LoginPage.class
-br\com\teste\AppTest.class
-br\com\teste\runners\TestRunner.class
-br\com\teste\support\DriverFactory.class
-br\com\teste\commands\LoginCommands.class

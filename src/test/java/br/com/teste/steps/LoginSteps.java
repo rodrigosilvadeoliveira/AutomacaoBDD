@@ -65,6 +65,6 @@ public class LoginSteps {
     @Entao("o sistema deve exibir a mensagem de erro {string}")
     public void o_sistema_deve_exibir_a_mensagem(String mensagemEsperada) {
         login.validarMensagem(mensagemEsperada);
-        driver.quit();
+       
     }
 }
