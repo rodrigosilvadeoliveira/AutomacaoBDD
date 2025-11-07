@@ -25,4 +25,8 @@ public class Config {
         String ambiente = getAmbiente();
         return properties.getProperty("url." + ambiente);
     }
+
+     public static String get(String chave) {
+        return properties.getProperty(chave);
+    }
 }

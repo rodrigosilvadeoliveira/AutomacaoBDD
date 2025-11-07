@@ -16,4 +16,9 @@ public class LoginPage {
         WebElement elemento = driver.findElement(mensagemErro);
         return elemento.getText();
     }
+
+    public By togleMenu = By.id("menuToggle");
+    public By menuAdministracao = By.xpath("//div[@class='mobile-category-title' and normalize-space(text())='Administração']");
+    public By menuCadastroAcesso = By.xpath("//div[@class='mobile-submenu']//a[normalize-space(text())='Cadastro Acesso']");
+    public By botaoSalvarCadastro = By.id("submitAdm");
 }

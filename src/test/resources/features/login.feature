@@ -14,3 +14,9 @@ Funcionalidade: Login no sistema
     E clico no botão de login
     Então o sistema deve exibir a mensagem de erro "Usuário ou senha inválida"
  
+ @cadastroUsuario
+ Cenário: 03.Cadastrar acesso
+    Dado que acesso com usuário "master" e a senha "@lirio2025"
+    Quando acessar a tela de cadastro de Acesso
+    E preencho dados para cadastro com perfil Consulta
+    Então cadastro realizado com sucesso

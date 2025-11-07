@@ -67,4 +67,33 @@ public class LoginSteps {
         login.validarMensagem(mensagemEsperada);
        
     }
+
+    @Dado("que acesso com usuário {string} e a senha {string}")
+    public void informaroUsuarioESenha(String usuario, String senha) {
+        login.preencherUsuario(usuario);
+        login.preencherSenha(senha);
+    }
+
+    @Quando("acessar a tela de cadastro de Acesso")
+    public void acessar_a_tela_de_cadastro_de_Acesso() {
+        login.clicarEntrar();
+        assertTrue(login.verificarUrlInicial());
+        login.clickMenu();
+        login.telaCadastroAcesso();
+    }
+
+    @E("preencho dados para cadastro com perfil Consulta")
+    public void preencher_cadastro() {
+        login.preencherFormularioComDadosFakes();
+        login.selecionarNivelAcessoConsulta();
+    }
+
+    @Entao("cadastro realizado com sucesso")
+    public void cadsatro_acesso() throws InterruptedException {
+        login.clickSalvarCadastro();
+        String mensagem = login.capturarTextoConfirmacao();
+        Assert.assertEquals("Cadastrado realizado com sucesso!", mensagem);
+        System.out.println("✅ Mensagem validada com sucesso: " + mensagem);
+    }
+
 }

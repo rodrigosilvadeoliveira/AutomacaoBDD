@@ -5,4 +5,6 @@ C:\projetos\AutomacaoBDD\src\test\java\br\com\teste\support\DriverFactory.java
 C:\projetos\AutomacaoBDD\src\test\java\br\com\teste\AppTest.java
 C:\projetos\AutomacaoBDD\src\test\java\br\com\teste\runners\TestRunner.java
 C:\projetos\AutomacaoBDD\src\test\java\utils\Config.java
+C:\projetos\AutomacaoBDD\src\test\java\utils\GeradorDadosFake.java
+C:\projetos\AutomacaoBDD\src\test\java\utils\DadosFake.java
 C:\projetos\AutomacaoBDD\src\test\java\br\com\teste\steps\LoginSteps.java
